@@ -1,0 +1,60 @@
+# 403 Fehlerseite erlauben
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+# IP-Blocking
+deny from 158.173.20.0/24
+deny from 158.173.21.0/24
+deny from 158.173.3.0/24
+
+# Direkten Zugriff auf includes/ verhindern
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^includes/.*$ - [F,L]
+</IfModule>
+
+# Alternativ mit Directory-Block:
+# <Directory "/home/username/public_html/includes">
+#     Require all denied
+# </Directory>
+
+# Schutz sensibler Dateien
+<FilesMatch "^(config)\.php$">
+    Require all denied
+</FilesMatch>
+
+# Schutz für Log-Dateien
+<FilesMatch "\.(log|txt)$">
+    Require all denied
+</FilesMatch>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# PHP Security Settings
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log /home/username/logs/php_errors.log
+</IfModule>
+
+# Verzeichnis-Listing deaktivieren
+Options -Indexes
+
+# index.php als Standardseite
+DirectoryIndex index.php index.html
+
+# HTTPS erzwingen (optional - nur wenn SSL-Zertifikat vorhanden)
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
