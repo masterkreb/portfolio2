@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --section-padding: 60px 20px;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: var(--section-padding);
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-margin-top: 80px;
+}
+
+#about {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: start;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 3%;
+    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Basis-Galerie-Stil */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
+/* Zwei Spalten für Jahreszeiten */
+.gallery-seasons figure {
+  flex: 1 1 45%;    /* zwei Bilder pro Zeile */
+}
+
+/* Eine Spalte für Porträts */
+.gallery-portraits figure {
+  flex: 1 1 100%;   /* ein Bild pro Zeile */
+}
+
+/* Gemeinsame Bild-Stile */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.13rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+
+h1, h2, h3, h4{
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2rem; }  /* Grösser als h2 */
+h2 { font-size: 1.75rem; }    /* Etwas kleiner als h1 */
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+.resume-content {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.resume-content p {
+    margin-bottom: 1.5rem;
+}
+
+.date-box {
+    color: rgb(250, 58, 106);
+    border-color: rgb(250, 18, 76);
+    border: solid 0.06rem;
+    padding: 0.13rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.projekt {
+    margin-bottom: 3rem;
+}
+
+.projekt-bild {
+    margin: 1.5rem 0;
+    overflow: hidden;
+    padding: 0.7rem;      
+}
+
+.projekt-bild figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.projekt-bild img {
+    width: 65%;
+    transition: transform 0.3s ease;
+    border-radius: 0.6rem;
+    border: #2c3e50 0.2rem solid;        
+}
+
+.projekt-bild img:hover {
+    transform: scale(1.03);
+}
+
+.projekt-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.projekt-links .button-projekt {
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.2s ease;
+}
+
+.projekt-links .button-projekt:hover {
+    background-color: #005fa3;
+}
+
+.resume-image {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.resume-image img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.resume-image figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+.form-group.honeypot {
+    display: none; /* Versteckt das Honeypot-Feld */
+}
+
+
+.icon-gif {
+  width: 160px;          /* GIF klein halten */
+  vertical-align: middle; /* In der Zeile zentrieren */
+  margin-left: 0.5rem;    /* Kleiner Abstand zur Überschrift */
+  margin-bottom: 1rem;
+}
+
+.map-container, .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    margin: 2rem 0;
+}
+
+.map-container iframe, .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .profile-image, .about-content, .gallery figure {
+        flex: 1 1 100%;
+    }
+    
+    /* Ergänzt für bessere mobile Ansicht */
+    .projekt-bild img {
+        width: 100%;
+    }
+}
