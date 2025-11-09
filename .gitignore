@@ -1,0 +1,22 @@
+# Sensible Konfigurationsdateien - niemals ins Repository!
+config.php
+
+# IDE-spezifische Dateien
+.idea/
+*.iml
+
+# Log-Dateien
+*.log
+rate_limit.log
+
+# Temporäre Dateien
+*.tmp
+*.bak
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
