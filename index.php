@@ -153,7 +153,7 @@ if (empty($_SESSION['csrf_token'])) {
 
             <article class="projekt">
             <p class="date-box">November 2025</p>
-            <h2>GamerFeed – RSS Feed News-Aggregators</h2>
+            <h2>GamerFeed – RSS Feed News-Aggregator</h2>
             <p>
                 Bei diesem Projekt handelt es sich um einen modernen News-Aggregator für Gaming-Nachrichten, den ich in enger Zusammenarbeit mit einer KI (Google Gemini) entwickelt habe. Meine Rolle war dabei die des Projektleiters, der die Anforderungen definierte und die Vision vorgab, während die KI als programmierender Partner fungierte. Ziel war es, eine hochperformante und personalisierbare Web-Anwendung zu schaffen.
             </p>
