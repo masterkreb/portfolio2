@@ -163,7 +163,7 @@ if (empty($_SESSION['csrf_token'])) {
             </p>
 
             <p>
-                Die App, umgesetzt mit React, TypeScript und Tailwind CSS, bündelt RSS-Feeds von diversen deutschen und englischen Quellen. Für eine optimale Nutzererfahrung habe ich Features wie eine Filter- und Suchfunktion, Favoriten, das Stummschalten von Quellen sowie verschiedene Layout-Optionen (Grid, Liste, Kompakt) und einen Dark-Mode implementiert. Eine Besonderheit ist die automatische Spracherkennung via i18next.
+                Die Architektur setzt auf einen von GitHub Actions regelmäßig aktualisierten, statischen News-Cache, um maximale Performance zu gewährleisten.
             </p>
 
             <figure class="projekt-bild">
