@@ -163,7 +163,7 @@ if (empty($_SESSION['csrf_token'])) {
             </p>
 
             <p>
-                Die Architektur setzt auf einen von GitHub Actions regelmäßig aktualisierten, statischen News-Cache, um maximale Performance zu gewährleisten.
+                Die Architektur setzt auf einen von GitHub Actions regelmässig aktualisierten, statischen News-Cache, um maximale Performance zu gewährleisten.
             </p>
 
             <figure class="projekt-bild">
