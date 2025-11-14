@@ -152,6 +152,33 @@ if (empty($_SESSION['csrf_token'])) {
           class="icon-gif">
 
             <article class="projekt">
+            <p class="date-box">November 2025</p>
+            <h2>GamerFeed – RSS Feed News-Aggregators</h2>
+            <p>
+                Bei diesem Projekt handelt es sich um einen modernen News-Aggregator für Gaming-Nachrichten, den ich in enger Zusammenarbeit mit einer KI (Google Gemini) entwickelt habe. Meine Rolle war dabei die des Projektleiters, der die Anforderungen definierte und die Vision vorgab, während die KI als programmierender Partner fungierte. Ziel war es, eine hochperformante und personalisierbare Web-Anwendung zu schaffen.
+            </p>
+
+            <p>
+                Die App, umgesetzt mit React, TypeScript und Tailwind CSS, bündelt RSS-Feeds von diversen deutschen und englischen Quellen. Für eine optimale Nutzererfahrung habe ich Features wie eine Filter- und Suchfunktion, Favoriten, das Stummschalten von Quellen sowie verschiedene Layout-Optionen (Grid, Liste, Kompakt) und einen Dark-Mode implementiert. Eine Besonderheit ist die automatische Spracherkennung via i18next.
+            </p>
+
+            <p>
+                Die App, umgesetzt mit React, TypeScript und Tailwind CSS, bündelt RSS-Feeds von diversen deutschen und englischen Quellen. Für eine optimale Nutzererfahrung habe ich Features wie eine Filter- und Suchfunktion, Favoriten, das Stummschalten von Quellen sowie verschiedene Layout-Optionen (Grid, Liste, Kompakt) und einen Dark-Mode implementiert. Eine Besonderheit ist die automatische Spracherkennung via i18next.
+            </p>
+
+            <figure class="projekt-bild">
+              <img src="./images/projekte/gamerfeed.jpg" alt="Screenshot der GamerFeed Seite">
+              <figcaption>Screenshot der GamerFeed Seite.</figcaption>
+            </figure>
+
+            <div class="projekt-links">
+              <a href="https://github.com/masterkreb/gamerfeed" target="_blank" class="button-projekt">Code auf GitHub</a>
+              <a href="https://gamerfeed.vercel.app/" target="_blank" class="button-projekt">Live-Demo</a>
+            </div>
+          </article>
+
+
+            <article class="projekt">
             <p class="date-box">Juni 2025</p>
             <h2>Pacman Teamprojekt - Agile Spieleentwicklung mit Python</h2>
             <p>
