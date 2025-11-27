@@ -155,15 +155,17 @@ if (empty($_SESSION['csrf_token'])) {
             <p class="date-box">November 2025</p>
             <h2>GamerFeed – RSS Feed News-Aggregator</h2>
             <p>
-                Bei diesem Projekt handelt es sich um einen modernen News-Aggregator für Gaming-Nachrichten, den ich in enger Zusammenarbeit mit einer KI (Google Gemini) entwickelt habe. Meine Rolle war dabei die des Projektleiters, der die Anforderungen definierte und die Vision vorgab, während die KI als programmierender Partner fungierte. Ziel war es, eine hochperformante und personalisierbare Web-Anwendung zu schaffen.
+                Ein News-Aggregator, der Gaming-Nachrichten aus verschiedenen Quellen sammelt und übersichtlich darstellt.
             </p>
 
             <p>
-                Die App, umgesetzt mit React, TypeScript und Tailwind CSS, bündelt RSS-Feeds von diversen deutschen und englischen Quellen. Für eine optimale Nutzererfahrung habe ich Features wie eine Filter- und Suchfunktion, Favoriten, das Stummschalten von Quellen sowie verschiedene Layout-Optionen (Grid, Liste, Kompakt) und einen Dark-Mode implementiert. Eine Besonderheit ist die automatische Spracherkennung via i18next.
+                Das Projekt wurde vollständig mit KI-Unterstützung entwickelt.
+                Ich habe das Konzept geplant, Features definiert und die KI mit Anweisungen gesteuert.
+                Der Code wurde von der KI generiert.
             </p>
 
             <p>
-                Die Architektur setzt auf einen von GitHub Actions regelmässig aktualisierten, statischen News-Cache, um maximale Performance zu gewährleisten.
+                Technologien: React, TypeScript, Tailwind CSS, Vercel, PostgreSQL
             </p>
 
             <figure class="projekt-bild">
