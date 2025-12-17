@@ -32,7 +32,7 @@ if (!empty($_POST['website'])) {
 
 $fehler = [];
 
-// reCAPTCHA v3 Server-Side Validation
+// reCAPTCHA v3 Server-Side Validation mit Score-Bewertung
 if (isset($_POST['recaptcha_response'])) {
     $recaptchaToken = $_POST['recaptcha_response'];
     $verifyURL = 'https://www.google.com/recaptcha/api/siteverify';
@@ -59,8 +59,33 @@ if (isset($_POST['recaptcha_response'])) {
         $fehler[] = "reCAPTCHA-Dienst nicht erreichbar. Bitte versuchen Sie es später erneut.";
     } else {
         $responseData = json_decode($response);
-        if (!$responseData || !$responseData->success || $responseData->score < 0.5) {
-            $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen. Sie wurden als potenzieller Bot eingestuft.";
+        
+        // Prüfe ob Response gültig ist
+        if (!$responseData || !isset($responseData->success)) {
+            $fehler[] = "Ungültige reCAPTCHA-Antwort erhalten.";
+        } 
+        // Prüfe Success-Status
+        elseif (!$responseData->success) {
+            $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen.";
+        }
+        // Prüfe ob Score vorhanden ist
+        elseif (!isset($responseData->score)) {
+            $fehler[] = "reCAPTCHA-Score fehlt in der Antwort.";
+        }
+        // Prüfe Action (sollte 'submit' sein)
+        elseif (!isset($responseData->action) || $responseData->action !== 'submit') {
+            $fehler[] = "reCAPTCHA-Action stimmt nicht überein.";
+        }
+        // Bewerte den Score (0.0 = Bot, 1.0 = Mensch)
+        else {
+            $score = $responseData->score;
+            
+            // Score muss mindestens 0.5 betragen
+            if ($score < 0.5) {
+                $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen. Sie wurden als potenzieller Bot eingestuft (Score: " . number_format($score, 2) . ").";
+            }
+            // Optional: Logs für Monitoring (Score wird aktiv abgerufen und verwendet)
+            // error_log("reCAPTCHA Score für IP $userIP: $score");
         }
     }
 } else {
