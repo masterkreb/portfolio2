@@ -199,7 +199,8 @@ p {
     width: auto;
     height: auto;
     border-radius: 0.6rem;
-    border: #2c3e50 0.2rem solid;        
+    border: #2c3e50 0.2rem solid;
+    transition: transform 0.3s ease-in-out;
 }
 
 .projekt-bild img:hover {
