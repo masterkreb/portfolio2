@@ -194,8 +194,10 @@ p {
 }
 
 .projekt-bild img {
-    width: 65%;
-    transition: transform 0.3s ease;
+    max-width: 65%;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
     border-radius: 0.6rem;
     border: #2c3e50 0.2rem solid;        
 }
@@ -352,6 +354,7 @@ footer {
     
     /* Ergänzt für bessere mobile Ansicht */
     .projekt-bild img {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
     }
 }

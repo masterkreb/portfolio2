@@ -152,6 +152,27 @@ if (empty($_SESSION['csrf_token'])) {
           class="icon-gif">
 
             <article class="projekt">
+              <p class="date-box">Dezember 2025</p>
+              <h2>Mobile Einkaufsliste mit Barcode-Scanner</h2>
+              <p>Eine mobile App zur Verwaltung von Einkaufslisten, entwickelt mit React Native. 
+                 Die App ermöglicht das Erstellen und Teilen von Listen, das Hinzufügen von Artikeln über die Handykamera als Barcode-Scanner und die Echtzeit-Synchronisation zwischen Geräten.</p> 
+                
+              <p>Das Projekt wurde als Leistungsnachweis im Informatikunterricht entwickelt. 
+                  Meine Rolle lag in der Konzeption, der detaillierten Planung der Features (wie Barcode-Erkennung und Cloud-Speicher) und der Steuerung der KI, welche die Code-Generierung übernommen hat. </p> 
+                  
+              <p>Technologien: React Native, Expo, Firebase (Firestore & Authentication)</p>
+
+              <figure class="projekt-bild">
+                <img src="./images/projekte/einkaufsliste.png" alt="Screenshot der Familien-Einkaufsliste Seite">
+                <figcaption>Screenshot der Familien-Einkaufsliste.</figcaption>
+              </figure>
+
+              <div class="projekt-links">
+                <a href="https://github.com/masterkreb/einkaufsliste" target="_blank" class="button-projekt">Code auf GitHub</a>                
+              </div>
+            </article>
+
+            <article class="projekt">
             <p class="date-box">November 2025</p>
             <h2>GamerFeed – RSS Feed News-Aggregator</h2>
             <p>
