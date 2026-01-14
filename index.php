@@ -354,7 +354,7 @@ if (empty($_SESSION['csrf_token'])) {
                 </div>
                 
                 <!-- Verstecktes Feld für das reCAPTCHA Token -->
-                <input type="hidden" id="recaptchaResponse" name="recaptcha_response">
+                <input type="hidden" id="recaptchaResponse" name="g-recaptcha-response">
 
                 <button type="submit">Nachricht senden</button>
             </form>

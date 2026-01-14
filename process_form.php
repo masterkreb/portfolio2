@@ -32,64 +32,43 @@ if (!empty($_POST['website'])) {
 
 $fehler = [];
 
-// reCAPTCHA v3 Server-Side Validation mit Score-Bewertung
-if (isset($_POST['recaptcha_response'])) {
-    $recaptchaToken = $_POST['recaptcha_response'];
-    $verifyURL = 'https://www.google.com/recaptcha/api/siteverify';
+// reCAPTCHA v3 Server-Side Validation via cURL
+if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
+    $recaptchaToken = $_POST['g-recaptcha-response'];
 
-    $postData = http_build_query([
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
         'secret'   => $recaptchaSecretKey,
         'response' => $recaptchaToken,
         'remoteip' => $userIP
-    ]);
+    ]));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    
+    $response = curl_exec($ch);
+    $curl_error = curl_error($ch);   
 
-    $options = [
-        'http' => [
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => $postData,
-            'timeout' => 10
-        ]
-    ];
-
-    $context  = stream_context_create($options);
-    $response = @file_get_contents($verifyURL, false, $context);
-
-    if ($response === false) {
-        $fehler[] = "reCAPTCHA-Dienst nicht erreichbar. Bitte versuchen Sie es später erneut.";
+    if ($curl_error) {
+        // Falls dein Hoster blockiert, sehen wir das hier sofort
+        $fehler[] = "Server-Verbindungsfehler: " . $curl_error;
     } else {
         $responseData = json_decode($response);
         
-        // Prüfe ob Response gültig ist
         if (!$responseData || !isset($responseData->success)) {
-            $fehler[] = "Ungültige reCAPTCHA-Antwort erhalten.";
-        } 
-        // Prüfe Success-Status
-        elseif (!$responseData->success) {
-            $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen.";
+            $fehler[] = "Ungültige Antwort von Google erhalten.";
+        } elseif (!$responseData->success) {
+            $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen (Token ungültig).";
+        } elseif (!isset($responseData->score)) {
+            $fehler[] = "reCAPTCHA-Score konnte nicht ermittelt werden.";
+        } elseif ($responseData->score < 0.5) {
+            $fehler[] = "Bot-Verdacht. Ihr Score ist zu niedrig (" . $responseData->score . ").";
         }
-        // Prüfe ob Score vorhanden ist
-        elseif (!isset($responseData->score)) {
-            $fehler[] = "reCAPTCHA-Score fehlt in der Antwort.";
-        }
-        // Prüfe Action (sollte 'submit' sein)
-        elseif (!isset($responseData->action) || $responseData->action !== 'submit') {
-            $fehler[] = "reCAPTCHA-Action stimmt nicht überein.";
-        }
-        // Bewerte den Score (0.0 = Bot, 1.0 = Mensch)
-        else {
-            $score = $responseData->score;
-            
-            // Score muss mindestens 0.5 betragen
-            if ($score < 0.5) {
-                $fehler[] = "reCAPTCHA-Verifizierung fehlgeschlagen. Sie wurden als potenzieller Bot eingestuft (Score: " . number_format($score, 2) . ").";
-            }
-            // Optional: Logs für Monitoring (Score wird aktiv abgerufen und verwendet)
-            // error_log("reCAPTCHA Score für IP $userIP: $score");
-        }
+        // Wenn kein Fehler auftritt, geht es normal weiter zum E-Mail-Versand
     }
 } else {
-    $fehler[] = "reCAPTCHA-Token fehlt. Bitte stellen Sie sicher, dass JavaScript aktiviert ist.";
+    $fehler[] = "reCAPTCHA-Token fehlt. Bitte laden Sie die Seite neu.";
 }
 
 // Felder-Validierung
