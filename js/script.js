@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (target) {
             // Header-Offset: 120px für den fixen Header
-            const headerOffset = 120;
+            const headerOffset = 70;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

@@ -17,7 +17,7 @@
 }
 
 .button-home {
-    background-color: var(--primary-color);
+    background-color: #007acc;
     color: white;
     text-decoration: none;
     padding: 0.8rem 1.5rem;
@@ -28,7 +28,7 @@
 }
 
 .button-home:hover {
-    background-color: #2980b9;
+    background-color: #005fa3;
 }
 
 /* In der Danke-Seite wird eine spezielle Body-Struktur benötigt  */

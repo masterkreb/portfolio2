@@ -363,7 +363,7 @@ if (empty($_SESSION['csrf_token'])) {
     </main>
 
     <footer>
-        <p>&copy; 2025 Imad Chatila. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2025<?php if(date('Y') > 2025) echo ' - ' . date('Y'); ?> Imad Chatila. Alle Rechte vorbehalten.</p>
     </footer>
 
     <script src="./js/script.js"></script>
