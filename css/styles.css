@@ -245,12 +245,12 @@ section > *:last-child > *:last-child {
 }
 
 .date-box {
-    color: rgb(250, 58, 106);
-    border-color: rgb(250, 18, 76);
-    border: solid 0.06rem;
-    padding: 0.13rem 0.6rem;
+    background-color: rgb(250, 58, 106);
+    color: white;
+    padding: 0.2rem 0.7rem;
     border-radius: 0.3rem;
     font-size: 0.8rem;
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -357,14 +357,6 @@ button:hover {
 
 .form-group.honeypot {
     display: none; /* Versteckt das Honeypot-Feld */
-}
-
-
-.icon-gif {
-  width: 160px;          /* GIF klein halten */
-  vertical-align: middle; /* In der Zeile zentrieren */
-  margin-left: 0.5rem;    /* Kleiner Abstand zur Überschrift */
-  margin-bottom: 1rem;
 }
 
 .map-container, .video-container {

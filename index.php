@@ -17,6 +17,7 @@ if (empty($_SESSION['csrf_token'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imad Chatila - Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png">
     <script src="https://www.google.com/recaptcha/api.js?render=6LfnRQcsAAAAALioZagT869ZEeZmtc-l-5_0UUYF"></script>
   
@@ -41,15 +42,12 @@ if (empty($_SESSION['csrf_token'])) {
                 <img src="./images/portraits/profilbild.jpg" alt="Profilbild von Imad Chatila">
             </figure>
             <article class="about-content">
-                <h1>Über mich</h1>                
-                <p>Hallo! Ich bin Imad Chatila, 1984 im Libanon geboren und seit 1988 in der Schweiz zu Hause.</p>
-                <img src="./images/gifs/cat_hi_01.gif" 
-                alt="Animierte Katze sagt Hello" 
-                class="icon-gif">                
-               
+                <h1><i class="fa-solid fa-user"></i> Über mich</h1>
+                <p>Hallo! Ich bin Imad Chatila, 1984 im Libanon geboren und seit 1988 in der Schweiz zu Hause.</p>   
+                                            
                 <h2>Meine Werte</h2>
                 <p>Zuverlässigkeit und Organisation sind für mich selbstverständlich. Ich erledige Aufgaben termingerecht und strukturiert. Neue Technologien und Programmierkonzepte wecken meine Neugier und motivieren mich, ständig dazuzulernen. Durch meine langjährige Erfahrung im Detailhandel weiss ich ausserdem, wie wichtig es ist, auf die Bedürfnisse von Anwendern einzugehen. Kundenorientierung ist für mich nicht nur ein Schlagwort, sondern gelebte Praxis.</p>
-                <br>
+               
                 <h2>Meine Ausbildung</h2>
                 <p>Seit September 2024 absolviere ich an der Benedict-Schule in Zürich eine Ausbildung zum Informatiker EFZ mit der Fachrichtung Applikationsentwicklung. Im Rahmen des HTML- und CSS-Moduls habe ich diese persönliche Website erstellt – mein Einstieg in die Webentwicklung. Zuvor haben wir bereits andere Projekte in Bereichen wie C++ oder Datenbanken umgesetzt. So konnte ich bereits Grundkenntnisse in C++ und MySQL aufbauen. Zurzeit arbeite ich mit Tools wie Visual Studio Code und Git, die mir helfen, meine Projekte effizient zu strukturieren und zu verwalten.</p>
                 
@@ -66,13 +64,9 @@ if (empty($_SESSION['csrf_token'])) {
                 </p>
                 <p>Manchmal schiesse ich auch gerne Fotos, um besondere Augenblicke festzuhalten.</p>
                 <h2>Bilder von mir und anderen Momenten</h2>
-                <img src="./images/gifs/camera_01.gif" 
-                alt="Animierte Katze sagt Hello" 
-                class="icon-gif">
                 <p>                             
                      Hier ist eine Fotoserie aus demselben Blickwinkel, die den Wandel der Natur vor meinem Fenster in allen vier Jahreszeiten zeigt.
                 </p>
-
 
                 <div class="gallery gallery-seasons">
                   <figure>
@@ -117,12 +111,8 @@ if (empty($_SESSION['csrf_token'])) {
         </section>
 
         <section id="resume">
-            <h1>Lebenslauf</h1>
+            <h1><i class="fa-solid fa-file-lines"></i> Lebenslauf</h1>
 
-            <img src="./images/gifs/cv_resume.gif" 
-            alt="Animierter Lebenslauf" 
-            class="icon-gif">
-            
             <article class="resume-content">
                 <h2>Mein Weg in die IT: Von der Praxis zur digitalen Zukunft</h2>
                 
@@ -145,11 +135,7 @@ if (empty($_SESSION['csrf_token'])) {
         </section>
 
         <section id="projekte">
-          <h1>Projekte</h1>
-          
-          <img src="./images/gifs/cat_on_pc_01.gif" 
-          alt="Animierte Katze am PC" 
-          class="icon-gif">
+          <h1><i class="fa-solid fa-code"></i> Projekte</h1>          
 
             <article class="projekt">
               <p class="date-box">Dezember 2025</p>
@@ -317,10 +303,8 @@ if (empty($_SESSION['csrf_token'])) {
         </section>
 
         <section id="contact">
-            <h1>Kontakt</h1>
-            <img src="./images/gifs/write_me.gif" 
-            alt="Eine animierte Hand schreibt mit einem Stift" 
-            class="icon-gif">
+            <h1><i class="fa-solid fa-envelope"></i> Kontakt</h1>
+
             <p>Du hast eine Frage oder ein Anliegen? Schreib mir einfach über das Formular!</p>
             
             <form id="contact-form" action="process_form.php" method="post">
