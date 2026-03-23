@@ -8,7 +8,7 @@ class RateLimiter {
     
     public function __construct($logFile = 'rate_limit.log', $maxAttempts = 3, $timeWindow = 3600) {
         // Log-Datei sollte außerhalb des public_html Ordners liegen
-        $this->logFile = __DIR__ . '/' . $logFile;
+        $this->logFile = dirname(__DIR__, 2) . '/logs/' . $logFile;
         $this->maxAttempts = $maxAttempts;
         $this->timeWindow = $timeWindow;
         
