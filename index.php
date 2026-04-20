@@ -116,7 +116,7 @@ if (empty($_SESSION['csrf_token'])) {
             <article class="resume-content">
                 <h2>Mein Weg in die IT: Von der Praxis zur digitalen Zukunft</h2>
                 
-                <p>Mein beruflicher Weg begann nicht in der Informatik – sondern mitten im echten Leben, wo Kundennähe, Organisation und Geschäftssinn gefragt waren. Über ein Jahrzehnt war ich als selbstständiger Detailhändler tätig, habe Kunden beraten, den Verkauf optimiert und die Logistik gesteuert. In dieser Zeit lernte ich, Verantwortung zu übernehmen, strategisch zu denken und mich ständig an neue Marktbedingungen anzupassen.</p>
+                <p>Mein beruflicher Weg begann nicht in der Informatik – sondern mitten im echten Leben, wo Kundennähe, Organisation und Geschäftssinn gefragt waren. Fünf Jahre lang war ich als selbstständiger Detailhändler tätig, habe Kunden beraten, den Verkauf optimiert und die Logistik gesteuert. In dieser Zeit lernte ich, Verantwortung zu übernehmen, strategisch zu denken und mich ständig an neue Marktbedingungen anzupassen.</p>
                 
                 <p>Doch meine Leidenschaft für Technologie und digitale Lösungen wuchs stetig. Schon während meiner Selbstständigkeit beschäftigte ich mich intensiv mit Online-Vertriebssystemen und digitalen Geschäftsmodellen. Die Begeisterung für IT und Programmierung liess mich nicht los – und so beschloss ich, einen neuen Weg einzuschlagen.</p>
                 
