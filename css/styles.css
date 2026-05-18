@@ -28,7 +28,7 @@
 
 body {
     color: var(--text-color);
-   /*background-color: #c9bda7;  diese Farbe scheint durch */
+    background-color: #c9bda7; /* Fallback, bis das Hintergrundbild geladen ist */
     line-height: 1.6;
     position: relative;
 }
@@ -48,7 +48,6 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     filter: grayscale(0%);
     opacity: 0.3; /* ← je kleiner, desto mehr Farbe sieht man*/ 
     z-index: -1;

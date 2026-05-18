@@ -16,10 +16,11 @@ if (empty($_SESSION['csrf_token'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imad Chatila - Portfolio</title>
+    <link rel="preload" as="image" href="./images/site/hintergrundbild_v_1.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfnRQcsAAAAALioZagT869ZEeZmtc-l-5_0UUYF"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfnRQcsAAAAALioZagT869ZEeZmtc-l-5_0UUYF" async defer></script>
   
 </head>
 <body>
