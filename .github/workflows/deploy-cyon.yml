@@ -41,5 +41,5 @@ jobs:
           username: ${{ secrets.CYON_USERNAME }}
           key: ${{ secrets.CYON_SSH_KEY }}
           port: ${{ secrets.CYON_PORT }}
-          source: ".htaccess,index.php,danke.html,process_form.php,rate_limit.php,README.md,css/*,js/*,images/*"
+          source: ".htaccess,index.php,danke.html,process_form.php,rate_limit.php,README.md,css,js,images"
           target: ${{ secrets.CYON_TARGET_DIR }}
