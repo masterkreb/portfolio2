@@ -2,45 +2,45 @@
 
 /* Zusätzliche Stile für die Danke-Seite */
 .thank-you-container {
-    margin-top: 7rem;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  margin-top: 7rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .thank-you-icon {
-    width: 160px;
-    margin: 2rem auto;
-    display: block;
+  width: 160px;
+  margin: 2rem auto;
+  display: block;
 }
 
 .button-home {
-    background-color: #007acc;
-    color: white;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.3rem;
-    transition: background-color 0.3s;
-    display: inline-block;
-    margin-top: 1rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .button-home:hover {
-    background-color: #005fa3;
+  background-color: #005fa3;
 }
 
 /* In der Danke-Seite wird eine spezielle Body-Struktur benötigt  */
 body.thank-you-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .thank-you-page main {
-    flex: 1;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }

@@ -39,101 +39,105 @@ if (empty($_SESSION['csrf_token'])) {
 
     <main>
         <section id="about">
-            <figure class="profile-image">
-                <img src="./images/portraits/profilbild.jpg" alt="Profilbild von Imad Chatila">
-            </figure>
-            <article class="about-content">
-                <h1><i class="fa-solid fa-user"></i> Über mich</h1>
-                <p>Hallo! Ich bin Imad Chatila, 1984 im Libanon geboren und seit 1988 in der Schweiz zu Hause.</p>   
-                                            
-                <h2>Meine Werte</h2>
-                <p>Zuverlässigkeit und Organisation sind für mich selbstverständlich. Ich erledige Aufgaben termingerecht und strukturiert. Neue Technologien und Programmierkonzepte wecken meine Neugier und motivieren mich, ständig dazuzulernen. Durch meine langjährige Erfahrung im Detailhandel weiss ich ausserdem, wie wichtig es ist, auf die Bedürfnisse von Anwendern einzugehen. Kundenorientierung ist für mich nicht nur ein Schlagwort, sondern gelebte Praxis.</p>
-               
-                <h2>Meine Ausbildung</h2>
-                <p>Seit September 2024 absolviere ich an der Benedict-Schule in Zürich eine Ausbildung zum Informatiker EFZ mit der Fachrichtung Applikationsentwicklung. Im Rahmen des HTML- und CSS-Moduls habe ich diese persönliche Website erstellt – mein Einstieg in die Webentwicklung. Zuvor haben wir bereits andere Projekte in Bereichen wie C++ oder Datenbanken umgesetzt. So konnte ich bereits Grundkenntnisse in C++ und MySQL aufbauen. Zurzeit arbeite ich mit Tools wie Visual Studio Code und Git, die mir helfen, meine Projekte effizient zu strukturieren und zu verwalten.</p>
-                
-                <h2>Projekte & Ausblick</h2>
-                <p>Die Umsetzung dieser Website war mein erstes Projekt im Bereich Webentwicklung im Rahmen des HTML/CSS-Moduls. Parallel dazu erweitere ich mein Wissen durch Online-Kurse und Tutorials. In den kommenden Monaten möchte ich mich intensiv mit JavaScript, responsivem Design und modernen Frameworks beschäftigen, um zunehmend dynamischere und benutzerfreundlichere Anwendungen zu entwickeln.</p>
-                
-                <h2>Ziele</h2>
-                <p>Nach dem EFZ-Abschluss plane ich den Besuch einer höheren Fachschule, um mein Wissen in Softwarearchitektur und modernen Webtechnologien weiter zu vertiefen. Langfristig möchte ich Applikationen entwickeln, die sowohl technisch einwandfrei als auch benutzerfreundlich sind.</p>
-                
-                <h2>Freizeit & Leidenschaft</h2>
-                <p>
-                   Wenn ich nicht am Code feile, findest du mich im Fitnessstudio oder beim Musikhören, oft elektronische Musik zur Entspannung oder Inspiration.
-                   Ab und zu gönne ich mir eine Auszeit in der Natur, um den Kopf frei zu bekommen und neue Energie zu tanken.                 
-                </p>
-                <p>Manchmal schiesse ich auch gerne Fotos, um besondere Augenblicke festzuhalten.</p>
-                <h2>Bilder von mir und anderen Momenten</h2>
-                <p>                             
-                     Hier ist eine Fotoserie aus demselben Blickwinkel, die den Wandel der Natur vor meinem Fenster in allen vier Jahreszeiten zeigt.
-                </p>
+      <figure class="profile-image">
+          <img src="./images/portraits/profilbild.jpg" alt="Profilbild von Imad Chatila">
+      </figure>
+      <article class="about-content">
+          <h1><i class="fa-solid fa-user"></i> Über mich</h1>
+          <p>Hallo! Ich bin Imad Chatila, 1984 im Libanon geboren und seit 1988 in der Schweiz zu Hause.</p>
 
-                <div class="gallery gallery-seasons">
-                  <figure>
-                    <img src="./images/jahreszeiten/sommer.jpg" alt="Sommer – Sonne auf der Wiese, Himmel bewölkt" style="width:100%">
-                    <figcaption>Sommer - Obwohl der Himmel bewölkt war, lag über der Wiese trotzdem Sonnenlicht.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="./images/jahreszeiten/herbst.jpg" alt="Herbst – buntes Laub" style="width:100%">
-                    <figcaption>Herbst - Die Bäume färben sich in warmen Tönen, die Stimmung wird ruhiger.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="./images/jahreszeiten/winter.jpg" alt="Winter – verschneite Landschaft" style="width:100%">
-                    <figcaption>Winter - Die Landschaft liegt still unter einer Schneedecke.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="./images/jahreszeiten/fruehling.jpg" alt="Frühling – grüne Wiese im Regen" style="width:100%">
-                    <figcaption>Frühling - Die Wiese ist wieder grün, doch an diesem Tag regnete es stark.</figcaption>
-                  </figure>
-                </div>
+          <h2>Meine Werte</h2>
+          <p>Zuverlässigkeit und Organisation sind für mich selbstverständlich. Ich erledige Aufgaben termingerecht und strukturiert. Neue Technologien und Programmierkonzepte wecken meine Neugier und motivieren mich, ständig dazuzulernen. Durch meine langjährige Erfahrung im Detailhandel weiss ich ausserdem, wie wichtig es ist, auf die Bedürfnisse von Anwendern einzugehen. Kundenorientierung ist für mich nicht nur ein Schlagwort, sondern gelebte Praxis.</p>
 
-                <p>Und hier ein paar persönliche Augenblicke:</p>
+          <h2>Meine Ausbildung</h2>
+          <p>Von September 2024 bis Juni 2026 habe ich an der Benedict-Schule in Zürich den schulischen Teil der zweijährigen Ausbildung zum Informatiker EFZ, Fachrichtung Applikationsentwicklung für Berufsumsteiger, absolviert. Für den Abschluss fehlt mir nun noch die praktische Berufserfahrung im Betrieb, um anschliessend die IPA zu absolvieren und den EFZ-Abschluss zu erlangen.</p>
 
-                <div class="gallery gallery-portraits">
-                  <figure>
-                    <img src="./images/portraits/schnee.jpg" alt="Selbstporträt im Schnee">
-                    <figcaption>Eiskalte Tage, an denen tanzende Schneeflocken im Zwielicht flüstern und die Kälte ihr uraltes Lied singt.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="./images/portraits/see.jpg" alt="Selbstporträt am See">
-                    <figcaption>Unter einem staubverhangenen Himmel glimmt die Sonne wie ein ferner Wächter über dem stillen Gewässer.</figcaption>
-                  </figure>
-                 <figure>
-                    <img src="./images/portraits/portrait_01.jpg" alt="Selbstporträt zu Hause">
-                    <figcaption>Ein Selfie zu Hause.</figcaption>
-                  </figure>
-                  <figure>
-                    <img src="./images/portraits/city.jpg" alt="Selbstporträt in Zürich">
-                    <figcaption>Aufgenommen auf dem Lindenhof in Zürich mit Blick auf den Zürichsee und die Stadt.</figcaption>
-                  </figure>
-                </div>                
-            </article>
-        </section>
+          <h2>Projekte & Ausblick</h2>
+          <p>Während meiner Ausbildung konnte ich verschiedene Schul- und Lernprojekte umsetzen und dabei Grundlagen in Webentwicklung, Programmierung, Datenbanken und Softwarestruktur sammeln. Auf dieser Website zeige ich eine Auswahl dieser Projekte und dokumentiere meinen Lernweg in der Applikationsentwicklung.</p>
 
-        <section id="resume">
-            <h1><i class="fa-solid fa-file-lines"></i> Lebenslauf</h1>
+          <p>Besonders interessieren mich Webanwendungen, Datenbanken und die strukturierte Umsetzung von Softwarelösungen. Mein nächster Schritt ist es, diese Kenntnisse in einem professionellen Umfeld praktisch anzuwenden, mich in bestehende Projekte einzuarbeiten und fachlich weiter zu wachsen.</p>
 
-            <article class="resume-content">
-                <h2>Mein Weg in die IT: Von der Praxis zur digitalen Zukunft</h2>
-                
-                <p>Mein beruflicher Weg begann nicht in der Informatik – sondern mitten im echten Leben, wo Kundennähe, Organisation und Geschäftssinn gefragt waren. Fünf Jahre lang war ich als selbstständiger Detailhändler tätig, habe Kunden beraten, den Verkauf optimiert und die Logistik gesteuert. In dieser Zeit lernte ich, Verantwortung zu übernehmen, strategisch zu denken und mich ständig an neue Marktbedingungen anzupassen.</p>
-                
-                <p>Doch meine Leidenschaft für Technologie und digitale Lösungen wuchs stetig. Schon während meiner Selbstständigkeit beschäftigte ich mich intensiv mit Online-Vertriebssystemen und digitalen Geschäftsmodellen. Die Begeisterung für IT und Programmierung liess mich nicht los – und so beschloss ich, einen neuen Weg einzuschlagen.</p>
-                
-                <p>Seit 2024 absolviere ich eine Ausbildung zum Informatiker EFZ mit Fachrichtung Applikationsentwicklung. Mein Ziel ist es, mein Wissen aus der Geschäftswelt mit der technischen Expertise der Softwareentwicklung zu verbinden. Ich möchte Lösungen entwickeln, die nicht nur funktional, sondern auch wirtschaftlich durchdacht sind.</p>
-                
-                <p>Mein vielseitiger Hintergrund – von Buchhaltung und Administration über Logistik bis hin zu kundenorientiertem Verkauf – gibt mir eine einzigartige Perspektive. Ich verstehe, wie Unternehmen funktionieren, was Kunden brauchen und wie IT-Lösungen optimal integriert werden können.</p>
-                
-                <p>Heute programmiere ich, entwickle Web-Anwendungen und arbeite daran, meine Fähigkeiten stetig zu erweitern. Mein nächster Schritt? Mein Wissen in der Praxis anwenden und Unternehmen dabei unterstützen, digitale Prozesse effizienter und benutzerfreundlicher zu gestalten.</p>
-                
-                <p>Meine Reise ist noch lange nicht zu Ende – sie hat gerade erst begonnen.</p>
-                <figure class="resume-image">
-                    <img src="./images/portraits/spaziergang.jpg" alt="Imad läuft in einer Landschaft">
-                    <figcaption>Ein Schritt nach vorn – mein Weg in die IT.</figcaption>
-                </figure>
-            </article>
-        </section>
+          <h2>Ziele</h2>
+          <p>Mein nächstes Ziel ist eine Praktikums- oder Einstiegsstelle in der Applikationsentwicklung, in der ich meine Kenntnisse praktisch anwenden und weiterentwickeln kann. Besonders interessieren mich Webentwicklung, Datenbanken, strukturierte Softwarelösungen und die Arbeit an realen Projekten im Team. Langfristig möchte ich Applikationen entwickeln, die technisch sauber umgesetzt und für Anwender verständlich und nützlich sind.</p>
+
+          <h2>Freizeit & Leidenschaft</h2>
+          <p>
+              Wenn ich nicht am Code feile, findest du mich im Fitnessstudio oder beim Musikhören, oft elektronische Musik zur Entspannung oder Inspiration.
+              Ab und zu gönne ich mir eine Auszeit in der Natur, um den Kopf frei zu bekommen und neue Energie zu tanken.
+          </p>
+          <p>Manchmal schiesse ich auch gerne Fotos, um besondere Augenblicke festzuhalten.</p>
+
+          <h2>Bilder von mir und anderen Momenten</h2>
+          <p>
+              Hier ist eine Fotoserie aus demselben Blickwinkel, die den Wandel der Natur vor meinem Fenster in allen vier Jahreszeiten zeigt.
+          </p>
+
+          <div class="gallery gallery-seasons">
+              <figure>
+                  <img src="./images/jahreszeiten/sommer.jpg" alt="Sommer – Sonne auf der Wiese, Himmel bewölkt" style="width:100%">
+                  <figcaption>Sommer - Obwohl der Himmel bewölkt war, lag über der Wiese trotzdem Sonnenlicht.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/jahreszeiten/herbst.jpg" alt="Herbst – buntes Laub" style="width:100%">
+                  <figcaption>Herbst - Die Bäume färben sich in warmen Tönen, die Stimmung wird ruhiger.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/jahreszeiten/winter.jpg" alt="Winter – verschneite Landschaft" style="width:100%">
+                  <figcaption>Winter - Die Landschaft liegt still unter einer Schneedecke.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/jahreszeiten/fruehling.jpg" alt="Frühling – grüne Wiese im Regen" style="width:100%">
+                  <figcaption>Frühling - Die Wiese ist wieder grün, doch an diesem Tag regnete es stark.</figcaption>
+              </figure>
+          </div>
+
+          <p>Und hier ein paar persönliche Augenblicke:</p>
+
+          <div class="gallery gallery-portraits">
+              <figure>
+                  <img src="./images/portraits/schnee.jpg" alt="Selbstporträt im Schnee">
+                  <figcaption>Eiskalte Tage, an denen tanzende Schneeflocken im Zwielicht flüstern und die Kälte ihr uraltes Lied singt.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/portraits/see.jpg" alt="Selbstporträt am See">
+                  <figcaption>Unter einem staubverhangenen Himmel glimmt die Sonne wie ein ferner Wächter über dem stillen Gewässer.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/portraits/portrait_01.jpg" alt="Selbstporträt zu Hause">
+                  <figcaption>Ein Selfie zu Hause.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/portraits/city.jpg" alt="Selbstporträt in Zürich">
+                  <figcaption>Aufgenommen auf dem Lindenhof in Zürich mit Blick auf den Zürichsee und die Stadt.</figcaption>
+              </figure>
+          </div>
+      </article>
+  </section>
+
+  <section id="resume">
+      <h1><i class="fa-solid fa-file-lines"></i> Lebenslauf</h1>
+
+      <article class="resume-content">
+          <h2>Mein Weg in die IT: Von der Praxis zur digitalen Zukunft</h2>
+
+          <p>Mein beruflicher Weg begann nicht direkt in der Informatik, sondern in einem Umfeld, in dem Kundennähe, Organisation und Verantwortung wichtig waren. Mehrere Jahre war ich als selbstständiger Detailhändler tätig und habe Kunden beraten, den Verkauf organisiert, administrative Aufgaben übernommen und Abläufe im Alltag koordiniert.</p>
+
+          <p>Mit der Zeit wuchs mein Interesse an Technologie, digitalen Lösungen und Softwareentwicklung immer stärker. Besonders spannend finde ich, wie Anwendungen Prozesse vereinfachen, Informationen verständlich darstellen und konkrete Probleme im Alltag lösen können.</p>
+
+          <p>Von September 2024 bis Juni 2026 absolvierte ich an der Benedict-Schule in Zürich den schulischen Teil der zweijährigen Ausbildung zum Informatiker EFZ, Fachrichtung Applikationsentwicklung für Berufsumsteiger. Dabei konnte ich Grundlagen in HTML, CSS, JavaScript, PHP, SQL, NoSQL, Java, Python und C++ sammeln und erste Schul- und Lernprojekte umsetzen.</p>
+
+          <p>Aktuell suche ich eine Praktikums- oder Einstiegsstelle in der Applikationsentwicklung, um meine Kenntnisse in der Praxis anzuwenden, weitere Berufserfahrung zu sammeln und anschliessend die IPA sowie den EFZ-Abschluss absolvieren zu können.</p>
+
+          <p>Mein kaufmännischer und kundenorientierter Hintergrund hilft mir dabei, technische Aufgaben nicht nur aus Sicht des Codes zu betrachten, sondern auch mit Blick auf Anwender, Abläufe und verständliche Lösungen.</p>
+
+          <p>Mein Ziel ist es, mich Schritt für Schritt zu einem zuverlässigen Applikationsentwickler weiterzuentwickeln und an Softwarelösungen mitzuarbeiten, die im Alltag echten Nutzen bringen.</p>
+
+          <figure class="resume-image">
+              <img src="./images/portraits/spaziergang.jpg" alt="Imad läuft in einer Landschaft">
+              <figcaption>Ein Schritt nach vorn – mein Weg in die IT.</figcaption>
+          </figure>
+      </article>
+  </section>
 
         <section id="projekte">
           <h1><i class="fa-solid fa-code"></i> Projekte</h1>          
