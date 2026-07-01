@@ -254,8 +254,7 @@ if (empty($_SESSION['csrf_token'])) {
                 </figure>
 
                 <div class="projekt-links">
-                    <a href="https://github.com/masterkreb/portfolio2" target="_blank" class="button-projekt">Code auf GitHub</a>
-                    <a href="https://masterkreb.github.io/portfolio2/" target="_blank" class="button-projekt">Live-Demo</a>
+                    <a href="https://github.com/masterkreb/portfolio2" target="_blank" class="button-projekt">Code auf GitHub</a>                 
                 </div>
             </article>
 
