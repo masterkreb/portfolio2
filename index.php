@@ -139,6 +139,34 @@ if (empty($_SESSION['csrf_token'])) {
           <h1><i class="fa-solid fa-code"></i> Projekte</h1>          
 
             <article class="projekt">
+              <p class="date-box">Mai 2026</p>
+              <h2>System Info Tool mit C# und WPF</h2>
+              <p>
+                Eine portable Windows-Desktop-App, die ohne Installation als einzelne EXE-Datei gestartet werden kann.
+                Die Anwendung liest wichtige Hardware- und Systeminformationen aus und stellt sie übersichtlich als Report dar.
+                Dazu gehören unter anderem Informationen zu Windows, BIOS, CPU, GPU, RAM, Mainboard, Speicher, Monitoren, Audio, Netzwerk und Uptime.
+              </p>
+                
+              <p>
+                Das Projekt wurde als Weiterentwicklung meines früheren PowerShell-System-Info-Tools umgesetzt.
+                Dabei lag der Fokus darauf, eine benutzerfreundlichere Oberfläche mit C# und WPF zu erstellen und die Systemdaten strukturierter aufzubereiten.
+                Zusätzlich kann der Report in die Zwischenablage kopiert oder als TXT-Datei gespeichert werden.
+              </p> 
+                  
+              <p>Technologien: C#, WPF, .NET, System.Management, LibreHardwareMonitorLib, Vortice.DXGI</p>
+
+              <figure class="projekt-bild">
+                <img src="./images/projekte/system_info_tool_c_sharp.png" alt="Screenshot des System Info Tools mit C# und WPF">
+                <figcaption>Screenshot des System Info Tools mit C# und WPF.</figcaption>
+              </figure>
+
+              <div class="projekt-links">
+                <a href="https://github.com/masterkreb/system_info_tool_c-sharp" target="_blank" class="button-projekt">Code auf GitHub</a>
+                <a href="https://github.com/masterkreb/system_info_tool_c-sharp/releases/latest" target="_blank" class="button-projekt">Download</a>
+              </div>
+            </article>
+
+            <article class="projekt">
               <p class="date-box">Dezember 2025</p>
               <h2>Mobile Einkaufsliste mit Barcode-Scanner</h2>
               <p>Eine mobile App zur Verwaltung von Einkaufslisten, entwickelt mit React Native. 
@@ -253,7 +281,7 @@ if (empty($_SESSION['csrf_token'])) {
             </p>            
         
             <figure class="projekt-bild">
-              <img src="./images/projekte/powershell_system_info_tool.png" alt="Screenshot des Powershell Tools">
+              <img src="./images/projekte/system_info_tool_powershell.png" alt="Screenshot des Powershell Tools">
               <figcaption>Screenshot des Powershell Tools.</figcaption>
             </figure>
         
