@@ -241,16 +241,26 @@ if (empty($_SESSION['csrf_token'])) {
             </article>
 
             <article class="projekt">
-                <p class="date-box">Mai 2025</p>
-                <h2>Persönliche Portfolio-Seite Nummer 2</h2>
+                <p class="date-box">Seit Mai 2025</p>
+                <h2>Aktuelle Portfolio-Seite mit PHP und CI/CD</h2>
                 <p>
-                    Im Rahmen des HTML- und CSS-Unterrichts haben wir in der Schule die Aufgabe erhalten, eine Website als One-Pager zu gestalten.
-                    Ich habe mich dazu entschieden, meine persönliche Seite zu erweitern und im One-Page-Format umzusetzen. Die Umsetzung erfolgte mit HTML und CSS.
+                    Dieses Projekt begann im Rahmen des HTML- und CSS-Unterrichts als persönliche One-Page-Portfolio-Seite.
+                    Seitdem habe ich die Website laufend erweitert und technisch verbessert.
+                    Heute dient sie als zentrale Portfolio-Seite, auf der ich meinen Werdegang, meine Projekte und meine Kontaktmöglichkeit präsentiere.
+                </p>
+
+                <p>
+                    Die Seite wird auf meinem cyon-Webhosting betrieben und wurde inzwischen unter anderem mit PHP, einem Kontaktformular mit CSRF-Schutz, reCAPTCHA und automatischem Deployment über GitHub Actions erweitert.
+                    Dadurch kann ich Änderungen lokal entwickeln, über GitHub versionieren und automatisch live veröffentlichen.
+                </p>
+
+                <p>
+                    Technologien: HTML, CSS, JavaScript, PHP, GitHub Actions, cyon Webhosting
                 </p>
 
                 <figure class="projekt-bild">
-                    <img src="./images/projekte/portfolio-seite_2.jpg" alt="Screenshot der Portfolio-Seite 2">
-                    <figcaption>Screenshot der Portfolio-Seite 2.</figcaption>
+                    <img src="./images/projekte/portfolio-seite_2.jpg" alt="Screenshot der Portfolio-Seite">
+                    <figcaption>Screenshot der Portfolio-Seite.</figcaption>
                 </figure>
 
                 <div class="projekt-links">
@@ -297,7 +307,7 @@ if (empty($_SESSION['csrf_token'])) {
 
             <article class="projekt">
                 <p class="date-box">Januar 2025</p>
-                <h2>Persönliche Portfolio-Seite</h2>
+                <h2>Erste Portfolio-Seite</h2>
                 <p>
                     Bei diesem Projekt handelt es sich um meine persönliche Seite, auf der ich meine Projekte präsentieren kann.
                     Für die Umsetzung habe ich HTML und CSS verwendet.
